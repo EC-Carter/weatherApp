@@ -1,0 +1,81 @@
+body{
+    margin:0px;
+    width:100vw;
+    height:100vh;
+    display:grid;
+    grid-template-columns: auto 300px auto;
+    grid-template-rows:20% 37.5% 3% 37.5% auto;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+#phone{
+    width:100%;
+    grid-column-start:1;
+    grid-column-end:4;
+    grid-row-start:1;
+    grid-row-end:6;
+
+}
+
+#input{
+    background-color: rgba(240, 240, 6, 0.529);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-column-start: 2;
+    grid-row-start:2;
+    border-radius: 5px;
+
+}
+
+label{
+    font-size: 2em;
+
+}
+
+input{
+    height: 30px;
+}
+
+#button{
+    border:1px solid black;
+    border-radius: 3px;
+    background-color: transparent;
+    font-family: inherit;
+    padding: 0;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+#dispWeather{
+    border:3px solid rgba(240, 240, 6, 0.529);
+    border-radius: 5px;
+    color:white;
+    font-weight: bold;
+    display:none;
+    grid-column-start: 2;
+    grid-row-start:4;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0, 0, 0, 0.379);
+}
+
+#dispWeather > p {
+    margin:0px;
+    max-width: 90%;
+    text-align: center;
+}
+
+/* #test{
+    background-color: yellow;
+    grid-column-start:1;
+    grid-column-end:4;
+
+    grid-row-start:1;
+    grid-row-end:6;
+} */
